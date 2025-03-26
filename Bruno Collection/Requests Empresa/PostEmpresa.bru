@@ -1,0 +1,24 @@
+meta {
+  name: PostEmpresa
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/empresa/add
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "denominacion": "Lorem Ipsum",
+    "telefono": "123456789",
+    "horarioDeAtencion": "De lunes a viernes",
+    "quienesSomos": "Lorem Ipsum",
+    "domicilio": "Calle Falsa 123",
+    "email": "email@gmail.com",
+    "latitud": 12345,
+    "longitud": 6789
+  }
+}
