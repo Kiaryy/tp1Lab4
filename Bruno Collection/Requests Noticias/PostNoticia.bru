@@ -1,0 +1,22 @@
+meta {
+  name: PostNoticia
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/noticia/add
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "tituloNoticia":"Nueva Noticia",
+    "resumenNoticia":"Resumen de la noticia",
+    "imagenNoticia":"direccion/de/imagen",
+    "contenidoHTML":"<contenido></contenido>",
+    "publicada":"n",
+    "empresa":1
+  }
+}
